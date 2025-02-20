@@ -1,11 +1,12 @@
 import { useState, memo, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [localTime, setLocalTime] = useState(new Date().toLocaleTimeString());
   const [serverTime, setServerTime] = useState(0);
   const [activeUsers, setActiveUsers] = useState(55);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -37,7 +38,9 @@ const Navbar = () => {
   return (
     <div className="w100 df aic jcsb navbar">
       <p className="df aic gap-10">
-        <button onClick={() => navigate("/")}>Go back</button>
+        {location.pathname != "/" && (
+          <button onClick={() => navigate("/")}>Go back</button>
+        )}
         {activeUsers} <small>Current time active users</small>
       </p>
       <div className="df aic navbar__time">
