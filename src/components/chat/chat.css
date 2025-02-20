@@ -1,0 +1,107 @@
+.chat-container {
+  height: 85dvh;
+  padding: 2% 5%;
+}
+
+.ai-info {
+  width: 200px;
+
+  figure {
+    height: 200px;
+    padding: 10px;
+
+    img {
+      height: 90%;
+      object-fit: cover;
+    }
+  }
+
+  p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #e84a4a;
+    text-transform: uppercase;
+
+    span:nth-child(1) {
+      font-size: 14px;
+      color: #fff9;
+    }
+  }
+
+  p:nth-child(3) {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Maksimum 5 satır göster */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.chat-box {
+  flex: 1;
+  height: 100%;
+  padding: 5% 10%;
+}
+
+.messages {
+  height: calc(100% - 60px);
+  max-width: 950px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  word-wrap: break-word; /* Uzun kelimeleri böler */
+  overflow-wrap: break-word; /* Taşmayı önler */
+}
+
+.messages > p {
+  font-size: 18px;
+  white-space: normal; /* Metnin alt satıra geçmesini sağlar */
+  word-break: break-word; /* Kelimeleri gerekirse böler */
+}
+
+.messages > p > strong {
+  color: #e84a4a;
+}
+
+.messages::-webkit-scrollbar {
+  width: 3px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #e84a4a;
+  border-radius: 5px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background-color: #fff3;
+}
+
+.send-message {
+  margin-top: 60px;
+  input {
+    flex: 1;
+    padding: 10px 15px;
+    height: 50px;
+    border: 1px solid #e84a4a;
+    border-radius: 5px;
+    background: none;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    font-size: 20px;
+    font-family: "Iceland", sans-serif;
+    outline: none;
+  }
+
+  button {
+    padding: 10px 20px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e84a4a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Iceland", sans-serif;
+  }
+}

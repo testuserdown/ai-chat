@@ -1,0 +1,103 @@
+.app-container {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+.navbar {
+  padding: 1.6% 5%;
+  > p {
+    color: #7dff68;
+    font-size: 30px;
+
+    > small {
+      color: #fff9;
+    }
+  }
+}
+
+.navbar__time {
+  gap: 25px;
+  > p {
+    font-size: 20px;
+    color: #fff9;
+
+    > span {
+      color: #fff;
+    }
+  }
+}
+
+.navbar__time > button,
+.navbar > p > button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Iceland", serif;
+  cursor: pointer;
+}
+
+.frame {
+  position: relative;
+  border: 1px solid #fff2;
+}
+/* Sol Üst Köşe */
+.frame::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #e84a4a;
+  border-left: 2px solid #e84a4a;
+}
+
+/* Sağ Üst Köşe */
+.frame::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #e84a4a;
+  border-right: 2px solid #e84a4a;
+}
+
+/* Sağ Alt Köşe */
+.frame .corner-right-bottom {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #e84a4a;
+  border-right: 2px solid #e84a4a;
+}
+
+/* Sol Alt Köşe */
+.frame .corner-left-bottom {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #e84a4a;
+  border-left: 2px solid #e84a4a;
+}
+
+.gradient-bg {
+  background: rgb(0, 0, 3);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 3, 1) 20%,
+    rgba(232, 74, 74, 0.178) 50%,
+    rgba(0, 0, 3, 1) 80%
+  );
+}

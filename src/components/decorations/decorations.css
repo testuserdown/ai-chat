@@ -1,0 +1,112 @@
+.ai-swiper {
+  width: 100%;
+  padding: 2% 5%;
+
+  >h1{
+    padding: 0 15px;
+    font-size: 50px;
+    color: #e84a4a;
+    background: #000003;
+    line-height: 50px;
+  }
+
+  >h2{
+    padding: 0 15px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #fff9;
+    background: #000003;
+  }
+}
+
+.swiper {
+  width: 60%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 60% !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10% 5%;
+  cursor: pointer;
+
+  > h1 {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0 15px;
+    font-size: 50px;
+    color: #fff;
+    background: #e84a4a;
+    line-height: 50px;
+    overflow: hidden;
+
+    > i {
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      font-size: 70px;
+      color: #0006;
+
+    }
+  }
+
+  > span {
+    padding: 3% 3% 0;
+    font-size: 18px;
+    color: #fff9;
+    text-transform: uppercase;
+    border-left: 2px solid #e84a4a;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Maksimum 5 satır göster */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    > strong {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+}
+
+.swiper-slide figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000003;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.swiper-slide:nth-child(3) img {
+  width: auto;
+  margin-left: 50%;
+  object-fit: cover;
+  padding: 5%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  /* bottom: -10px ; */
+}
+.swiper-pagination-bullet {
+  background: #fff9 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e84a4a !important;
+}
