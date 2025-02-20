@@ -51,7 +51,7 @@ export default function AISwiper() {
               </i>
             </h1>
             <span className="w100 df fdc aic">
-              <strong>DESCRIPTION</strong> <br />
+              <strong>ABOUT:</strong> <br />
               {hero.description}
             </span>
           </SwiperSlide>
