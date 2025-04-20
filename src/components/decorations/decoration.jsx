@@ -15,7 +15,7 @@ export default function AISwiper() {
   const navigate = useNavigate();
   return (
     <div className="ai-swiper frame gradient-bg">
-      <h1 className="w100 df jcc chat-title">AI CHAT</h1>
+      <h1 className="w100 df jcc chat-title">Omni Gods</h1>
       <h2 className="w100 df jcc">Select to talk to your favorite character</h2>
       <Swiper
         effect={"coverflow"}

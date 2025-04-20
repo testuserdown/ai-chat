@@ -1,5 +1,6 @@
 import { useState, memo, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const Navbar = () => {
   const [localTime, setLocalTime] = useState(new Date().toLocaleTimeString());
@@ -44,6 +45,10 @@ const Navbar = () => {
         {activeUsers} <small>Current time active users</small>
       </p>
       <div className="df aic navbar__time">
+        <RiTwitterXLine
+          className="fs-24"
+          onClick={() => window.open("https://x.com/omnigods_sol", "_blank")}
+        />
         <button>Get Demo</button>
         <p className="df aic gap-10">
           Server Time:{" "}
