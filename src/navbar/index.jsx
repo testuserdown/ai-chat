@@ -47,7 +47,7 @@ const Navbar = () => {
       <div className="df aic navbar__time">
         <RiTwitterXLine
           className="fs-24"
-          onClick={() => window.open("https://x.com/omnigods_sol", "_blank")}
+          onClick={() => window.open("https://x.com/omnicult_sol", "_blank")}
         />
         <button>Get Demo</button>
         <p className="df aic gap-10">
