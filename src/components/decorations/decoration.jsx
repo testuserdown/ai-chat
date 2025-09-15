@@ -10,13 +10,16 @@ import { useNavigate } from "react-router-dom";
 
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+const ENV = window.__ENV || {};
+const siteTitle = ENV.TITLE || "AI CHAT";
+const siteDesc = ENV.DESC || "Select to talk to your favorite character";
 
 export default function AISwiper() {
   const navigate = useNavigate();
   return (
     <div className="ai-swiper frame gradient-bg">
-      <h1 className="w100 df jcc chat-title">OmniCult</h1>
-      <h2 className="w100 df jcc">Select to talk to your favorite character</h2>
+      <h1 className="w100 df jcc chat-title">{siteTitle}</h1>
+      <h2 className="w100 df jcc">{siteDesc}</h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

@@ -2,6 +2,8 @@ import { useState, memo, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { RiTwitterXLine } from "react-icons/ri";
 
+const ENV = window.__ENV || {};
+const link = ENV.X || "https://x.com/new";
 const Navbar = () => {
   const [localTime, setLocalTime] = useState(new Date().toLocaleTimeString());
   const [serverTime, setServerTime] = useState(0);
@@ -47,7 +49,7 @@ const Navbar = () => {
       <div className="df aic navbar__time">
         <RiTwitterXLine
           className="fs-24"
-          onClick={() => window.open("https://x.com/omnicult_sol", "_blank")}
+          onClick={() => window.open(link, "_blank")}
         />
         <button>Get Demo</button>
         <p className="df aic gap-10">
